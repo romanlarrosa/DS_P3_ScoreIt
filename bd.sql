@@ -11,7 +11,8 @@ create table USUARIOS(
     id_usuario int AUTO_INCREMENT primary key,
     nombre varchar(200) not null,
     pass varchar(200) not null,
-    tipo varchar(200)
+    tipo varchar(200),
+    verificado BOOLEAN DEFAULT FALSE
 );
 
 
@@ -32,6 +33,11 @@ create table PUNTUACIONES(
     FOREIGN KEY (id_local) references LOCALES(id_local),
     primary key (id_local, id_usuario)
 );
+
+
+-- inserts --
+
+Insert into USUARIOS (nombre, pass, tipo) values ('admin', 'marinalaputa', 'ADMIN');
 
 
 
