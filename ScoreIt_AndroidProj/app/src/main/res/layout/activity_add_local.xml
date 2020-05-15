@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLocalActivity"
+   >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_local_textview"
+
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        />
+
+    <EditText
+        android:id="@+id/nombre_local_form"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+
+        android:layout_below="@+id/textView"
+
+
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="0dp"
+
+        android:layout_marginTop="20dp"
+        android:background="@layout/search_outline"
+        android:ems="10"
+
+        android:hint="@string/local_name"
+        android:inputType="textPersonName"
+        android:paddingStart="22dp"
+        android:paddingTop="12dp"
+
+        android:paddingEnd="20dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/secondaryTextColor"
+        android:textColorHint="#95989A"
+
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre_local_form"
+
+        android:layout_alignStart="@+id/nombre_local_form"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+
+        android:text="@string/location"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/location_local_form"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+
+
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@layout/search_outline"
+        android:ems="10"
+        android:hint="@string/local_location"
+        android:inputType="textPersonName"
+
+        android:paddingStart="22dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="12dp"
+
+        android:textColor="@color/secondaryTextColor"
+        android:textColorHint="#95989A"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/location_local_form"
+        android:layout_alignStart="@+id/nombre_local_form"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/description"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/addLocal_formButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcion_local_forn"
+        android:layout_marginStart="80dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/custom_button"
+        android:onClick="addLocal"
+        android:text="@string/add_property" />
+
+    <EditText
+        android:id="@+id/descripcion_local_forn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+
+</RelativeLayout>

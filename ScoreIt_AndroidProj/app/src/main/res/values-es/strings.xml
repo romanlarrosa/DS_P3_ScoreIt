@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScoreIt</string>
+    <string name="botonInicio">Inicio</string>
+    <string name="botonPerfil">Perfil</string>
+    <string name="hello_blank_fragment">Fragmento en blanco</string>
+    <string name="search_hint">Buscar locales</string>
+    <string name="ranking">Ranking</string>
+    <string name="signIn">Iniciar sesión</string>
+    <string name="signUp">Registrarse</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="owner">Dueño</string>
+    <string name="user_name">Nombre</string>
+    <string name="user_type">Tipo</string>
+    <string name="add_property">Añadir local</string>
+    <string name="my_property">Mis locales</string>
+    <string name="user_admin">Gestión usuarios</string>
+    <string name="admin">Administrador</string>
+    <string name="sign_out">Cerrar Sesion</string>
+    <string name="verify">Verificar</string>
+    <string name="delete">Eliminar</string>
+    <string name="deleted">Eliminado</string>
+    <string name="local_name">Nombre del local...</string>
+    <string name="location">Ubicación</string>
+    <string name="local_location">Ubicación del local</string>
+    <string name="nombre_local_textview">Nombre</string>
+    <string name="description">Descripción</string>
+    <string name="score">Puntuación</string>
+</resources>
