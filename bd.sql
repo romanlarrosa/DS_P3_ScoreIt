@@ -1,11 +1,7 @@
--- Crear la base de datos --
-
 create user 'si'@'localhost' identified by '1234';
 create user 'si'@'%' identified by '1234';
 CREATE DATABASE ScoreIt;
 
-
---Crear la tabla de usuarios
 
 create table USUARIOS(
     id_usuario int AUTO_INCREMENT primary key,
@@ -33,12 +29,3 @@ create table PUNTUACIONES(
     FOREIGN KEY (id_local) references LOCALES(id_local),
     primary key (id_local, id_usuario)
 );
-
-
--- inserts --
-
-Insert into USUARIOS (nombre, pass, tipo) values ('admin', 'marinalaputa', 'ADMIN');
-
-
-
-
